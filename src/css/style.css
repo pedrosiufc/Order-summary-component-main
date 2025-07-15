@@ -1,15 +1,25 @@
 body{
     font-family: "Red Hat Display";
-    font-size: 62,5%;
+    font-size: 62.5%;
     background-color: var(--blue-100);
-   
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    min-height: 100vh;
+    margin: 0;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+          
 }
 
 .container-music-plan{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: ;
     height: 600px;
     
 }
@@ -20,7 +30,6 @@ body{
     background-color: var(--blue-50);
     height: 700px;
     width: 450px;
-    margin-top: -300px;
     border-radius: 30px;
 }
 
