@@ -1,4 +1,4 @@
-body{
+body {
     font-family: "Red Hat Display";
     font-size: 62.5%;
     background-color: var(--blue-100);
@@ -6,111 +6,135 @@ body{
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% auto;
-    min-height: 100vh;
+    width: 100vw;
+    height: 900px;
     margin: 0; 
-    /* margin-top: 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    
-          
 }
 
-.container-music-plan{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw; 
-    height: 100vh;
-        
-}
-
-.container-card-music{
-    justify-content: center;
-    align-items: center;
-    background-color: var(--blue-50);
-    height: 700px;
+.container-music-plan {
     width: 450px;
-    border-radius: 30px;
+    min-height: 520px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-img img{
-    justify-content: center;
-    align-items: center;
+.container-card-music .container-img img {
     width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.container-card-music h1{
-    font-size: 2rem;
+.container-info h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
     text-align: center;
-    padding: 35px;
-}
-
-.container-card-music p{
-    color: var(--gray-600);
-    align-items: center;
-    text-align: center;
-    font-size: 17px;
-    padding: 0px 40px;
-    font-weight: 500;
-}
-.card-plan{    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-color: var(--blue-100);
-    width: 90%;
-    border-radius: 15px;
     margin-top: 20px;
-    margin-left: 20px;
 }
 
-.card-plan .plan h3{
+.container-info p {
+    
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card-plan {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center; 
+    background-color: var(--blue-50);
+    border-radius: 10px;
+    width: 85%;
+    margin-left: 30px;
+}
+
+.container-info .card-plan img {
+    margin-left: -50px;
+    display: flex;
+    padding: 10px;
+}
+
+.card-plan .plan h3 {
+    display: flex;
     align-items: center;
     flex-direction: column;
-    padding-left: 40px;
-    padding-right: 90px; 
-
+    margin-left: -50px;
 }
 
-.buttons{
-    margin-top: 20px;
+a {
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.links {
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-
 }
 
-.btn-payment{
+.link-payment {
+    border: none;
     font-size: 1rem;
     font-weight: 700;
+    margin-top: 10px;
     color: white;
     background-color: var(--blue-700);
+    align-content: center;
     text-align: center;
-    width: 80%;
-    height: 60px;
+    width: 85%;
+    height: 50px;
     border-radius: 15px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.btn-cancel{
-    margin-top: 30px;
+.link-cancel {
+    border: none;
     font-size: 1rem;
     font-weight: 700;
-    background-color: var(--blue-50);
     text-align: center;
-    width: 80%;
-    height: 80%;
-    border-radius: 30px;
-
+    margin-top: 20px;
+    width: 80%px;
+    height: 50px;
+    
 }
 
-.texto{
+.texto {
     color: var(--gray-600);
+}
+
+.textDecoration{
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: var(--blue-100);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container-music-plan {
+        width: 90%;
+        margin: 0;
+        border-radius: 20px;
+    }
+
+    .container-info .card-plan img {
+        width: 20%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
 }
